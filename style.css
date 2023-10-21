@@ -1,0 +1,96 @@
+body { /* esto seria el selector*/
+     background-color: rgb(250, 221, 225);  /*Es el color de fondo*/
+    
+}
+.rosa { /* Aca el nombre rosa sirve para para el elemento <DIV>*/
+    
+    background-image: url( https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy5DnrwA7qlUtkctd9EPk1cgSunXt2aDqWgw&usqp=CAU); /*Es la URL de la imagen que quiero poner de fondo*/
+    background-size:cover; /* Sirve para ajustar la imagen en la forma del contenedor*/
+    padding: 20px; /*Sirve para poner  a la imagen un espacio a su alrededor*/
+    background-repeat: no-repeat;
+    background-position: center; /* centra la imagen y controla la posicion de la imagen*/
+    border: rgb(37, 36, 37) solid 2px; /*Poner un borde de color negro*/
+    height: 250px;
+    font-family:sans-serif;
+
+
+
+}
+
+.rosa h1 { /*Para aplicar estilos especificos al titulo dentro del contenedor*/
+    color: rgb(49, 11, 11); /* Color de texto*/
+    font-size: 3.5em; /*Tamaño de la letra*/
+    text-decoration: underline; /* Sirve para poner eñ subrayado*/
+    background: transparent; /* Fondo trasparente para las letras*/
+    text-align: center; /*El texto lo pone en el centro*/
+    
+  
+}
+.Color {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: rgb(253, 205, 214);
+}
+.chequeo{
+    display: flex; 
+    margin-left: auto; /*centrar izquiera o derecha automaticamente*/
+    margin-right: auto;   
+    border: 2px solid black;
+
+
+}
+
+ h2{
+    text-align: center; /*Alinear el texto al centro*/
+    font-size: 30px; /*tamaño de la fuente*/
+    text-decoration: underline ;
+    text-decoration-color: rgb(231, 124, 142);
+    background-color:rgb(243, 138, 173) ;
+}
+/* Por clase o class: que tmb ya esta puesto en el archivo de html*/
+.imagen1 {
+    display: block;/*sirve para poner el bloque asi ocupa todo el ancho*/
+    margin: 0% auto; /*pone un margen superior e inferior de cero y automatico*/
+    border: 2px solid black; /**/
+    background-color: aliceblue; /*color de fondo*/
+    background-position: center;
+}
+.contenedor-de-video {
+    text-align: center; /*alinea el contenido en el centro*/
+}
+.video {
+    display:inline-block; /* hace que se comporte como un bloque en linea*/
+}
+
+.imagen2 {
+    display: block;
+    margin: 0% auto;
+}
+.imagen3 {
+    display: block;
+    margin: 0% auto;
+    border: 2px solid black;
+    background-color: aliceblue;
+}
+.metodos {
+    text-align: center;
+}
+p {
+    font-size: 20px;
+}
+em {
+    font-size: 20px; 
+}
+fieldset {
+    background-color: rgb(241, 199, 219);
+}
+footer {
+    line-height: 1 ; /*Se usa para achicar el espacio entre las oraciones*/
+    background-color: black;
+    color: aliceblue;
+    font-size: 0.2em;
+}
+    
