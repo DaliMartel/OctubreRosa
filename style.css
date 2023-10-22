@@ -12,9 +12,6 @@ body { /* esto seria el selector*/
     border: rgb(37, 36, 37) solid 2px; /*Poner un borde de color negro*/
     height: 250px;
     font-family:sans-serif;
-
-
-
 }
 
 .rosa h1 { /*Para aplicar estilos especificos al titulo dentro del contenedor*/
@@ -23,9 +20,8 @@ body { /* esto seria el selector*/
     text-decoration: underline; /* Sirve para poner eñ subrayado*/
     background: transparent; /* Fondo trasparente para las letras*/
     text-align: center; /*El texto lo pone en el centro*/
-    
-  
 }
+
 .Color {
 
     display: flex;
@@ -102,4 +98,10 @@ footer {
     color: aliceblue;
     font-size: 0.2em;
 }
-    
+
+a:hover{  /* cuando pasas el mouse por encima de un elemento cambia de color*/
+    background: violet;
+}  
+a:link{   /*pone de color a los enlaces no visitados todavia*/
+background: pink;
+}
