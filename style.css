@@ -42,6 +42,9 @@ body { /* esto seria el selector*/
 
 
 }
+.Color2 {
+    background-color: rgb(253, 205, 214);
+}
 
  h2{
     text-align: center; /*Alinear el texto al centro*/
@@ -69,11 +72,17 @@ body { /* esto seria el selector*/
     display: block;
     margin: 0% auto;
 }
+.Color3 {
+background-color: rgb(253, 205, 214);
+}
 .imagen3 {
     display: block;
     margin: 0% auto;
     border: 2px solid black;
-    background-color: aliceblue;
+    background-color: rgb(253, 205, 214);
+}
+.Color4 {
+    background-color: rgb(253, 205, 214);
 }
 .metodos {
     text-align: center;
