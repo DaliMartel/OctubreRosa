@@ -1,9 +1,7 @@
 body { /* esto seria el selector*/
      background-color: rgb(250, 221, 225);  /*Es el color de fondo*/
-    
 }
 .rosa { /* Aca el nombre rosa sirve para para el elemento <DIV>*/
-    
     background-image: url( https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy5DnrwA7qlUtkctd9EPk1cgSunXt2aDqWgw&usqp=CAU); /*Es la URL de la imagen que quiero poner de fondo*/
     background-size:cover; /* Sirve para ajustar la imagen en la forma del contenedor*/
     padding: 20px; /*Sirve para poner  a la imagen un espacio a su alrededor*/
@@ -13,7 +11,6 @@ body { /* esto seria el selector*/
     height: 250px;
     font-family:sans-serif;
 }
-
 .rosa h1 { /*Para aplicar estilos especificos al titulo dentro del contenedor*/
     color: rgb(49, 11, 11); /* Color de texto*/
     font-size: 3.5em; /*Tamaño de la letra*/
@@ -21,27 +18,32 @@ body { /* esto seria el selector*/
     background: transparent; /* Fondo trasparente para las letras*/
     text-align: center; /*El texto lo pone en el centro*/
 }
-
+@keyframes example { /*Aplicación de la animación*/
+    0% {background-color: rgb(226, 51, 109);}
+    50% {background-color: rgb(235, 185, 232);}
+    100% {background-color: rgb(226, 144, 155);}
+}
 .Color {
-
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50vh;
     background-color: rgb(253, 205, 214);
+    position: relative; /*Posicion*/
+    animation-name: example; /* indican que siga la secuencia de animación definida por ese @keyframes*/
+    animation-duration: 4s; /* Duracion de la animacion*/
+    border-radius: 50%; /* Es para los bordes, si es 50 hace un borde redondeado*/
+    animation-iteration-count: infinite; /*Hace que sea infinito */
 }
 .chequeo{
     display: flex; 
     margin-left: auto; /*centrar izquiera o derecha automaticamente*/
     margin-right: auto;   
     border: 2px solid black;
-
-
 }
 .Color2 {
     background-color: rgb(253, 205, 214);
 }
-
  h2{
     text-align: center; /*Alinear el texto al centro*/
     font-size: 30px; /*tamaño de la fuente*/
@@ -98,7 +100,6 @@ footer {
     color: aliceblue;
     font-size: 0.2em;
 }
-
 a:hover{  /* cuando pasas el mouse por encima de un elemento cambia de color*/
     background: violet;
 }  
@@ -109,4 +110,7 @@ background: pink;
     .rosa h1 {
       font-size: 1.5em; /* Tamaño de fuente ajustado para pantallas más pequeñas */
     }
-  }
+}
+
+  
+  
