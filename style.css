@@ -18,6 +18,16 @@ body { /* esto seria el selector*/
     background: transparent; /* Fondo trasparente para las letras*/
     text-align: center; /*El texto lo pone en el centro*/
 }
+ ul{ /*Mejora en el ordenamiento de los links en horizontal*/
+    padding: 20px; /*relleno predeterminado */
+    display: flex; /* Configura los elementos de la lista como elementos en línea */
+    
+ }
+ ul li{
+    padding: 10px; /* Añade un relleno alrededor de los elementos del menú */
+    margin: 10px; /* Añade un margen entre los elementos del menú */
+ }
+ 
 @keyframes example { /*Aplicación de la animación*/
     0% {background-color: rgb(226, 51, 109);}
     50% {background-color: rgb(235, 185, 232);}
