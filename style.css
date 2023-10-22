@@ -105,3 +105,8 @@ a:hover{  /* cuando pasas el mouse por encima de un elemento cambia de color*/
 a:link{   /*pone de color a los enlaces no visitados todavia*/
 background: pink;
 }
+@media only screen and (max-width: 600px) {
+    .rosa h1 {
+      font-size: 1.5em; /* Tamaño de fuente ajustado para pantallas más pequeñas */
+    }
+  }
