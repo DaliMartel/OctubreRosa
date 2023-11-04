@@ -18,20 +18,42 @@ body { /* esto seria el selector*/
     background: transparent; /* Fondo trasparente para las letras*/
     text-align: center; /*El texto lo pone en el centro*/
 }
- ul{ /*Mejora en el ordenamiento de los links en horizontal*/
+.lista-inicio{ /*Mejora en el ordenamiento de los links en horizontal*/
     padding: 20px; /*relleno predeterminado */
     display: flex; /* Configura los elementos de la lista como elementos en línea */
-    
+    flex-wrap: wrap;
+    justify-content: center;/* Justificar el contenido en el centro*/
  }
- ul li{
+ .lista-inicio li{
     padding: 10px; /* Añade un relleno alrededor de los elementos del menú */
     margin: 10px; /* Añade un margen entre los elementos del menú */
+    width: 200px;
+    height: 3%;
+    background: rgb(235, 185, 235);
+    border:2px solid pink;
+    font-weight: bold ;
+    color: black;
  }
  
 @keyframes example { /*Aplicación de la animación*/
-    0% {background-color: rgb(226, 51, 109);}
-    50% {background-color: rgb(235, 185, 232);}
-    100% {background-color: rgb(226, 144, 155);}
+    0% {background-color: rgb(233, 178, 196);}
+    50% {background-color: rgb(238, 195, 235);}
+    100% {background-color: rgb(238, 196, 201);}
+}
+.tumor{
+    font-size: 20px;
+    
+}
+.benignos-malignos{
+    color: rgb(233, 65, 93);
+    text-decoration: underline;
+}
+.Celulas{
+    display: flex;
+    border-radius: 50%; /*Poner en la imagen el borde circular*/
+}
+.imagen-y-texto{
+    display: flex;
 }
 .Color {
     display: flex;
@@ -46,13 +68,20 @@ body { /* esto seria el selector*/
     animation-iteration-count: infinite; /*Hace que sea infinito */
 }
 .chequeo{
-    display: flex; 
+    display: flex; /* Hace que se ponga los elementos en linea*/
     margin-left: auto; /*centrar izquiera o derecha automaticamente*/
     margin-right: auto;   
     border: 2px solid black;
 }
 .Color2 {
     background-color: rgb(253, 205, 214);
+}
+.Prev{
+    justify-content: center;
+    font-size: 18px;
+}
+.continuacion{
+    text-decoration: underline;
 }
  h2{
     text-align: center; /*Alinear el texto al centro*/
@@ -72,16 +101,32 @@ body { /* esto seria el selector*/
 .contenedor-de-video {
     text-align: center; /*alinea el contenido en el centro*/
 }
+.cambiosenla-mama { /* poner en el centro la imagen que no pude*/
+
+    display: block;
+    margin: 0% auto;
+    justify-content: center;/*centra horizontalmente*/
+    align-items: center;/* centra verticalmente*/
+    text-align: center;
+    background-color: aliceblue;
+    background-position: center;
+
+}
 .video {
     display:inline-block; /* hace que se comporte como un bloque en linea*/
 }
 
 .imagen2 {
     display: block;
-    margin: 0% auto;
+    margin: 0% auto ;
+    border: 1px solid black;
+    height: auto;
+    max-width: 50%;
 }
 .Color3 {
 background-color: rgb(253, 205, 214);
+display: flex;
+
 }
 .imagen3 {
     display: block;
@@ -95,6 +140,22 @@ background-color: rgb(253, 205, 214);
 .metodos {
     text-align: center;
 }
+dt u {
+    background-color: rgb(180, 132, 224);
+}
+.mitos{
+    font-size: 21px;
+    font-weight: bold;
+    background-color: rgb(221, 180, 221);
+}
+.dd-mitos{
+    background-color: rgb(233, 181, 217);
+}
+.alto1{
+    display: flex;
+    justify-content: center;
+}
+
 p {
     font-size: 20px;
 }
@@ -102,7 +163,7 @@ em {
     font-size: 20px; 
 }
 fieldset {
-    background-color: rgb(241, 199, 219);
+    background-color: rgb(231, 212, 221);
 }
 footer {
     line-height: 1 ; /*Se usa para achicar el espacio entre las oraciones*/
@@ -110,10 +171,10 @@ footer {
     color: aliceblue;
     font-size: 0.2em;
 }
-a:hover{  /* cuando pasas el mouse por encima de un elemento cambia de color*/
+ul li:hover{  /* cuando pasas el mouse por encima de un elemento cambia de color en este caso en los que tenga id*/
     background: violet;
 }  
-a:link{   /*pone de color a los enlaces no visitados todavia*/
+ul li:link{   /*pone de color a los enlaces no visitados todavia*/
 background: pink;
 }
 @media only screen and (max-width: 600px) {
