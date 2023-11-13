@@ -1,47 +1,71 @@
 body { /* esto seria el selector*/
      background-color: rgb(250, 221, 225);  /*Es el color de fondo*/
+     display: grid;
+     align-items: center;
+     margin: 0%;
+     border:10px solid rgb(247, 221, 225);
+     grid-template:
+                    "header header" 120px
+                    " main " auto
+                    "footer" 70 /200px auto;
 }
-.rosa { /* Aca el nombre rosa sirve para para el elemento <DIV>*/
-    background-image: url( https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy5DnrwA7qlUtkctd9EPk1cgSunXt2aDqWgw&usqp=CAU); /*Es la URL de la imagen que quiero poner de fondo*/
-    background-size:cover; /* Sirve para ajustar la imagen en la forma del contenedor*/
-    padding: 20px; /*Sirve para poner  a la imagen un espacio a su alrededor*/
-    background-repeat: no-repeat;
-    background-position: center; /* centra la imagen y controla la posicion de la imagen*/
-    border: rgb(37, 36, 37) solid 2px; /*Poner un borde de color negro*/
-    height: 250px;
-    font-family:sans-serif;
+
+
+.div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+.carousel-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 100%;
+  }
+
+  
+.carousel-inner {
+    display: flex;
+    width: 100%;
+
+  }
+  
+.carousel-item img.mesrosa {
+
+    width: 500%;
+    height: auto;
+    object-fit: cover;
 }
-.rosa h1 { /*Para aplicar estilos especificos al titulo dentro del contenedor*/
-    color: rgb(49, 11, 11); /* Color de texto*/
-    font-size: 3.5em; /*Tamaño de la letra*/
-    text-decoration: underline; /* Sirve para poner eñ subrayado*/
-    background: transparent; /* Fondo trasparente para las letras*/
-    text-align: center; /*El texto lo pone en el centro*/
+.navbar .bg-body-tertiary {
+    background-color:palevioletred; /* Cambia #ff0000 al color que desees */
 }
-.lista-inicio{ /*Mejora en el ordenamiento de los links en horizontal*/
-    padding: 20px; /*relleno predeterminado */
-    display: flex; /* Configura los elementos de la lista como elementos en línea */
-    flex-wrap: wrap;
-    justify-content: center;/* Justificar el contenido en el centro*/
- }
- .lista-inicio li{
-    padding: 10px; /* Añade un relleno alrededor de los elementos del menú */
-    margin: 10px; /* Añade un margen entre los elementos del menú */
-    width: 200px;
-    height: 3%;
-    background: rgb(235, 185, 235);
-    border:2px solid pink;
-    font-weight: bold ;
-    color: black;
- }
+.navbar {
+    border-bottom: 2px solid rgb(235, 153, 228);
+}
+   
+.nav-item {
+    list-style-type: none;
+}
+.navbar-brand{
+    text-decoration: underline;
+    border-bottom: 2px solid ;
+   
+
+}
+
  
-@keyframes example { /*Aplicación de la animación*/
-    0% {background-color: rgb(233, 178, 196);}
+@keyframes Colores { /*Aplicación de la animación*/
+    0% { background-color: rgb(233, 178, 196);
+         border-radius: 100%; }
     50% {background-color: rgb(238, 195, 235);}
     100% {background-color: rgb(238, 196, 201);}
 }
 .tumor{
-    font-size: 20px;
+    font-size: 15px;
     
 }
 .benignos-malignos{
@@ -144,12 +168,15 @@ dt u {
     background-color: rgb(180, 132, 224);
 }
 .mitos{
-    font-size: 21px;
+    font-size: 17px;
     font-weight: bold;
     background-color: rgb(221, 180, 221);
 }
 .dd-mitos{
     background-color: rgb(233, 181, 217);
+}
+.tumor dd{
+    font-size: 20px;
 }
 .alto1{
     display: flex;
@@ -164,24 +191,38 @@ em {
 }
 fieldset {
     background-color: rgb(231, 212, 221);
+    font-size: 20px;
+}
+header{
+    grid-area: "header";
+    background: rgb(238, 202, 238);
+}
+main{
+    grid-area: "main";
+    background: rgb(247, 221, 225);
 }
 footer {
+    grid-area: "footer"; /*Pie de página*/
     line-height: 1 ; /*Se usa para achicar el espacio entre las oraciones*/
     background-color: black;
     color: aliceblue;
     font-size: 0.2em;
 }
-ul li:hover{  /* cuando pasas el mouse por encima de un elemento cambia de color en este caso en los que tenga id*/
+.nav-item:hover{  /* cuando pasas el mouse por encima de un elemento cambia de color en este caso en los que tenga id*/
     background: violet;
 }  
-ul li:link{   /*pone de color a los enlaces no visitados todavia*/
-background: pink;
-}
+
 @media only screen and (max-width: 600px) {
     .rosa h1 {
       font-size: 1.5em; /* Tamaño de fuente ajustado para pantallas más pequeñas */
     }
 }
-
+.Luchar{
+    display: flex;
+    justify-content: center;
+    width: auto;
+   height: 200px;
+   background-position: center;
+}
   
   
