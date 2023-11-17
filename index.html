@@ -60,7 +60,7 @@
         </div>
       </nav>
     </header> 
- </div><br>
+    </div><br>
         <em>A nivel mundial, el mes de Octubre se considera como el mes rosa porque es dedicado a crear conciencia y sensibilización sobre el <b>Cáncer de Mama </b>, tipo de cáncer más común y principal causa de mortalidad en mujeres de todo el mundo.</em> <br><br> <!--em sirve para dar enfasis en el texto -->
     <div class="Color">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlvMhEsRK2C8UEwmArd5TSr_U4OsVCquOmVw&usqp=CAU" width="400px" height="250px"  alt="ultimo-chequeo" class="chequeo">
@@ -69,8 +69,8 @@
         <p> El <b>objetivo </b> es sensibilizar a la población con un mensaje clave: la importancia de la detección precoz, a fin de mejorar el pronóstico y la supervivencia de los casos, lo cual sigue siendo la piedra angular de la lucha contra esta enfermedad, que representa la primera causa de muerte en la población femenina a nivel mundial.</p> <br> <!-- p=sirve para parrafo, br= para separar un poco el siguiente texto-->
     </section> <hr> <!--Sirve para separar contenido-->
     
-    <div class="movimiento"> <!--sive para agrupar y estrucutrar-->
-        <form action="../archivoadicional.html" method="get" id="Contactanos"><br> <!-- Form sirve para incluir un formulario en la web-->
+    <div class="movimiento" > <!--sive para agrupar y estrucutrar-->
+        <form action="./Archivos extras/archivoadicional.html" method="get" id="Contactanos"><br> <!-- Form sirve para incluir un formulario en la web-->
         <fieldset> <!-- conjunto de elementos que tiene un formulario web-->
          <legend><p><b>  Si querés que te contactemos para más información, podes dejar tus datos <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-heart" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M5 1.5A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm5 0a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Z"/>
@@ -78,40 +78,33 @@
             <path d="M8 6.982C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.31 8 6.982Z"/> </svg></b></p></legend> <!-- Legend, sirve para dar un titulo  a la etiqueta-->  
          <p>
             <label for="Nombre"><b>Nombre: </b></label> <!--label siver para dar el titulo de un formulario-->
-            <input type="text" name="Nombre" id="Nombre"><!--input, para introduccion al formulario, type para el tipo en este caso texto, name por el nombre y ID para poder identificarlo asi-->
+            <input type="text" name="Nombre" id="Nombre" minlength="3" title="Ingrese más de 3 letras." required><!--input, para introduccion al formulario, type para el tipo en este caso texto, name por el nombre y ID para poder identificarlo asi-->
         </p>
         <p>
             <label for="Apellido"><b> Apellido:</b></label>
-            <input type="text" name="Apellido" id="Apellido">
+            <input type="text" name="Apellido" id="Apellido" minlength="3" title="Ingrese más de 3 letras." required>
         </p>
         <p> 
             <label for="Numero-de-telefono"><b> Número de teléfono:</b></label>
-            <input type="number" name="Numero-de-telefono" id="Numero-de-telefono">
+            <input type="number" name="Numerodetelefono" id="Numero-de-telefono" pattern="[0-9]+" title="Ingrese solo números." required>
         </p>
         <p>
             <label for="Correo-electronico"><b> Correo electrónico:</b></label>
-           <input type="email" name="Correo-electronico" id="Correo-electronico">
+           <input type="email" name="Correoelectronico" id="Correo-electronico" required>
         </p>
+       
         <p>
-            <label for="Deseo-recibir-informacion"><b>  Deseo recibir información </b></label> 
-            <input type="checkbox" name= "Deseo-recibir-informacion" id="Deseo-recibir-informacion"> 
-        </p> 
-        <p>
-            <label for="Acepto-todos-los-terminos-y-condiciones"><b> Acepto todos los términos y condiciones</b></label> 
-            <input type="checkbox" name= "Acepto-todos-los-terminos-y-condiciones" id="Acepto-todos-los-terminos-y-condiciones"> <!--el tipo aca seria de caja-->
-        </p> 
-        <p>
-            <input onclick="BorrarFormulario()" type="button" value="Borrar"> 
-            <input type="submit" value="Enviar">
+            <input type="submit" onclick="validarFormulario()" value="Enviar" >
         </p>
         </fieldset>
         </form>   
     </div>
+    <div id="Errordemesaje"> </div>
     <footer> <!--Contenido de pie de pagina-->
          <p> 2023 Página Web- Mes Rosa </p>
          <p> Por dudas y/o consultas contactarse con: dali.martel22@gmail.com</p>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body> 
 </html>
