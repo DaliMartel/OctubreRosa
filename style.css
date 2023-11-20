@@ -10,58 +10,58 @@ body { /* esto seria el selector*/
                     "footer" 70 /200px auto;
 }
 
+    
 
 .div1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    width: 100%;
+    margin: 0 auto;  
+    overflow: hidden;
   }
 
-.carousel-item {
-    width: 100%;
+.carousel-item{
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 0 0 100%;
+   
   }
-
+.mesrosa{
+    width: 100%;
+    height: auto;
+} 
   
 .carousel-inner {
     display: flex;
-    width: 100%;
-
   }
   
-.carousel-item img.mesrosa {
-
-    width: 500%;
-    height: auto;
+.carousel-item .mesrosa {
+    width: 50vw;
+    height: 30vw;
     object-fit: cover;
+   
 }
 .navbar .bg-body-tertiary {
     background-color:palevioletred; /* Cambia #ff0000 al color que desees */
 }
-.navbar {
-    border-bottom: 2px solid rgb(235, 153, 228);
-}
+
    
 .nav-item {
     list-style-type: none;
+  
 }
-.navbar-brand{
+.navbar-brand{  
     text-decoration: underline;
     border-bottom: 2px solid ;
-   
-
+    font-size: 250% !important;
 }
 
  
-@keyframes Colores { /*Aplicación de la animación*/
-    0% { background-color: rgb(233, 178, 196);
+@keyframes Color{ /*Aplicación de la animación*/
+    0% { background-color: rgb(228, 149, 175);
          border-radius: 100%; }
-    50% {background-color: rgb(238, 195, 235);}
+    50% {background-color: rgb(233, 180, 229);}
     100% {background-color: rgb(238, 196, 201);}
 }
 .tumor{
@@ -86,7 +86,7 @@ body { /* esto seria el selector*/
     height: 50vh;
     background-color: rgb(253, 205, 214);
     position: relative; /*Posicion*/
-    animation-name: example; /* indican que siga la secuencia de animación definida por ese @keyframes*/
+    animation-name: Color; /* indican que siga la secuencia de animación definida por ese @keyframes*/
     animation-duration: 4s; /* Duracion de la animacion*/
     border-radius: 50%; /* Es para los bordes, si es 50 hace un borde redondeado*/
     animation-iteration-count: infinite; /*Hace que sea infinito */
@@ -189,10 +189,12 @@ p {
 em {
     font-size: 20px; 
 }
+
 fieldset {
     background-color: rgb(231, 212, 221);
     font-size: 20px;
 }
+
 header{
     grid-area: "header";
     background: rgb(238, 202, 238);
@@ -224,5 +226,6 @@ footer {
    height: 200px;
    background-position: center;
 }
+
   
   
