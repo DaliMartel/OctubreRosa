@@ -176,6 +176,7 @@ body { /* esto seria el selector*/
     margin: 0% auto ;
     border: 1px solid black;
     width: 300px;
+    height: 200px;
  }
 
  .Color3 {
