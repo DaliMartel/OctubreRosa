@@ -6,14 +6,14 @@
     <title>Mes Rosa</title> <!-- titulo de la pagina pero que se ve en la ventana-->
     <link rel="icon" href="./imagenes/lazo_28103929_l.jpg">
     <link rel="stylesheet"   href="./CSS/style.css"> <!-- lo que hace es vincular con el CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" >
 </head>
 <body>
-    <header><!-- Parte cabecera de una web -->
+  <header><!-- Parte cabecera de una web -->
     <div class="div1">
-        <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-ride="carousel" >
+        <div id="carrusel" class="carousel slide" data-bs-ride="carousel"> <!-- la clase es para crear un carusel de imagenes, data-bs-ride es para habilitar el desplazamiento auto-->
+            <div class="carousel-inner"> <!-- se encuentran las imagenes del carrusel-->
+              <div class="carousel-item active" data-bs-ride="carousel" > <!-- representa las diapositivas-->
                 <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo7RHUL1oEscebwtzbqYknCfvyTPCP2wEjMQ&usqp=CAU"  class="mesrosa"   alt="Octubre">
               </div>
               <div class="carousel-item" data-bs-ride="carousel" > 
@@ -26,11 +26,19 @@
         </div>
     </div>
     
-    <div class="contenedor">
-        <nav class="navbar" style="background-color: rgb(236, 169, 191)">
-        <div  class="container-fluid">
-          <a class="navbar-brand">Octubre, Mes de lucha contra el Cáncer de Mama</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="contenedor"> <!-- Este es el contenedor general -->
+        <nav class="navbar "  style="background-color: rgb(236, 169, 191)"> <!--Barra de navegación, nav (barra de navegación) = navbar (es de Bootstrap) y un estilo personalizado -->
+        <div  class="container-fluid"> <!-- Contenedor fluid es una clase de Bootstrap para ser un contenedor ancho y sensible-->
+          <div class="d-flex align-items-center"> <!--contenedor flexible y para alinear su contenido-->
+            <div class="mesde-lucha"> 
+          <a class="navbar-brand"> <!-- Logotipo o marca en la barra de navegación con texto-->
+           
+             Octubre, Mes de lucha contra el Cáncer de Mama 
+        
+          </a>
+        </div>
+         </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"> <!-- -->
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarText">
@@ -64,7 +72,7 @@
     </div><br>
         <em>A nivel mundial, el mes de Octubre se considera como el mes rosa porque es dedicado a crear conciencia y sensibilización sobre el <b>Cáncer de Mama </b>, tipo de cáncer más común y principal causa de mortalidad en mujeres de todo el mundo.</em> <br><br> <!--em sirve para dar enfasis en el texto -->
     <div class="Color">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlvMhEsRK2C8UEwmArd5TSr_U4OsVCquOmVw&usqp=CAU" width="400px" height="250px"  alt="ultimo-chequeo" class="chequeo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlvMhEsRK2C8UEwmArd5TSr_U4OsVCquOmVw&usqp=CAU"   alt="ultimo-chequeo" class="chequeo">
     </div> <br>
     <section> <!--Indica la seccion de un documento-->
         <p> El <b>objetivo </b> es sensibilizar a la población con un mensaje clave: la importancia de la detección precoz, a fin de mejorar el pronóstico y la supervivencia de los casos, lo cual sigue siendo la piedra angular de la lucha contra esta enfermedad, que representa la primera causa de muerte en la población femenina a nivel mundial.</p> <br> <!-- p=sirve para parrafo, br= para separar un poco el siguiente texto-->

@@ -1,85 +1,89 @@
+
 body { /* esto seria el selector*/
-     background-color: rgb(250, 221, 225);  /*Es el color de fondo*/
-     display: grid;
-     align-items: center;
-     margin: 0%;
-     border:10px solid rgb(247, 221, 225);
-     grid-template:
-                    "header header" 120px
-                    " main " auto
-                    "footer" 70 /200px auto;
+    background-color: rgb(250, 221, 225);  /*Es el color de fondo*/
+    /* aca iba el display: grid;*/
+    align-items: center;
+    font-size: 16px;
+    padding: 0%;
+    margin: 0%;
+    border:5px solid rgb(247, 221, 225);
+    grid-template:
+    "header header" 120px
+    " main " auto
+    "footer" 70 /200px auto;
+    
+    
 }
 
-    
 
-.div1{
+ /*Carrusel*/
+
+.div1 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;  
     overflow: hidden;
   }
-
-.carousel-item{
+ 
+  .carousel-item{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 0 0 100%;
+    
    
   }
-.mesrosa{
+
+  .mesrosa{
     width: 100%;
     height: auto;
-} 
-  
-.carousel-inner {
+  }
+ 
+  .carousel-inner {
     display: flex;
   }
-  
-.carousel-item .mesrosa {
+
+  .carousel-item .mesrosa {
     width: 50vw;
     height: 30vw;
     object-fit: cover;
    
-}
-.navbar .bg-body-tertiary {
-    background-color:palevioletred; /* Cambia #ff0000 al color que desees */
-}
+ }
+ /*Barra de navegación*/
 
-   
-.nav-item {
+
+ .navbar .bg-body-tertiary {
+    background-color:palevioletred; /* Cambia #ff0000 al color que desees */
+    display: flex;
+ }
+
+ .nav-item {
     list-style-type: none;
   
-}
-.navbar-brand{  
-    text-decoration: underline;
-    border-bottom: 2px solid ;
-    font-size: 250% !important;
-}
+ }
+ .container-fluid {
+    display: flex;
+ }
 
- 
-@keyframes Color{ /*Aplicación de la animación*/
-    0% { background-color: rgb(228, 149, 175);
-         border-radius: 100%; }
-    50% {background-color: rgb(233, 180, 229);}
-    100% {background-color: rgb(238, 196, 201);}
-}
-.tumor{
-    font-size: 15px;
+ .mesde-lucha a {
+    display: flex;
+    border-bottom: 2px solid ;
+    font-size: 200% ;
+    margin: 0;
     
-}
-.benignos-malignos{
-    color: rgb(233, 65, 93);
-    text-decoration: underline;
-}
-.Celulas{
-    display: flex;
-    border-radius: 50%; /*Poner en la imagen el borde circular*/
-}
-.imagen-y-texto{
-    display: flex;
-}
-.Color {
+ }
+
+ .nav-item:hover{  /* cuando pasas el mouse por encima de un elemento cambia de color en este caso en los que tenga id*/
+    background: violet;
+ }  
+
+
+  
+ /* Imagen ultimo chequeo 1er página*/
+ em {
+    font-size: 17px; 
+ }
+ .Color {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,142 +94,244 @@ body { /* esto seria el selector*/
     animation-duration: 4s; /* Duracion de la animacion*/
     border-radius: 50%; /* Es para los bordes, si es 50 hace un borde redondeado*/
     animation-iteration-count: infinite; /*Hace que sea infinito */
+
 }
-.chequeo{
+
+
+ .chequeo{
     display: flex; /* Hace que se ponga los elementos en linea*/
     margin-left: auto; /*centrar izquiera o derecha automaticamente*/
     margin-right: auto;   
     border: 2px solid black;
-}
-.Color2 {
-    background-color: rgb(253, 205, 214);
-}
-.Prev{
-    justify-content: center;
-    font-size: 18px;
-}
-.continuacion{
+    width: 400px ;
+
+ }
+ @keyframes Color{ /*Aplicación de la animación*/
+    0% { background-color: rgb(228, 149, 175);
+         border-radius: 100%; }
+    50% {background-color: rgb(233, 180, 229);}
+    100% {background-color: rgb(238, 196, 201);}
+
+ }
+
+
+
+/* 2 pagina de que es el cáncer*/
+
+ .benignos-malignos{
+    color: rgb(233, 65, 93);
     text-decoration: underline;
+ }
+
+ .imagen-y-texto{  
+    display: flex;
+   
+
+ } 
+ .celular{
+    display: flex; 
+    justify-content: center;
+    margin: 0% auto;
+    overflow: hidden
+
+ }
+ .Celulas{
+   
+    border-radius: 50%; /*Poner en la imagen el borde circular*/
+    width: 300px;
+ }
+
+
+  
+ /*Pág 3 detección y prevención*/
+
+ .continuacion{
+    text-decoration: underline;
+ }
+
+ .contenedor-de-video {
+    text-align: center; /*alinea el contenido en el centro*/
+    max-width: 100%; 
+    background-color: rgb(253, 205, 214);
+    background-position: center;
+ }
+
+ .Color2 {
+    background-color: rgb(253, 205, 214);
+ }
+
+ .cambiosenla-mama {  
+    
+    display: block;
+    margin: 0% auto;
+    justify-content: center;/*centra horizontalmente*/
+    align-items: center;
+    text-align: center;
+    /*arreglar*/
+ }
+ .metodos {
+    text-align: center;
+ }
+ .imagen2 {
+    margin: 0% auto ;
+    border: 1px solid black;
+    width: 300px;
+ }
+
+ .Color3 {
+    background-color: rgb(253, 205, 214);
+    display: flex; 
+    justify-content: center;
+    margin: 0% auto;
+    overflow: hidden;
+ }
+
+
+   /*Pág 3 Factores de riesgo*/
+.Prev{
+   justify-content: center;
+   font-size: 18px;
 }
- h2{
+.Color4 {
+    background-color: rgb(253, 205, 214);
+ }
+ .imagen3 {
+    display: block;
+    margin: 0% auto;
+    border: 2px solid black;
+    background-color: rgb(253, 205, 214);
+    background-position: center;
+    
+ }
+  
+
+ /*Pág 4 Mitos*/
+
+ .alto1{
+    display: flex;
+    justify-content: center;
+ }
+ .mitos{
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgb(221, 180, 221);
+ }
+
+ dt u {
+    background-color: rgb(180, 132, 224);
+ }
+
+ .dd-mitos{
+    background-color: rgb(233, 181, 217);
+ }
+
+ .tumor dd{
+    font-size: 17px;
+ }
+
+/*Archivo adicional*/
+.Luchar{
+    background-color: rgb(253, 205, 214);
+    display: flex; 
+    justify-content: center;
+    background-position: center;
+}
+
+.adicional{
+    width: 400px;
+    height: auto;
+    margin: 0% auto ;
+    border: 1px solid black;
+   
+}
+
+
+
+
+
+
+/*h2 para todos*/
+h2{
     text-align: center; /*Alinear el texto al centro*/
     font-size: 30px; /*tamaño de la fuente*/
     text-decoration: underline ;
     text-decoration-color: rgb(231, 124, 142);
     background-color:rgb(243, 138, 173) ;
-}
-/* Por clase o class: que tmb ya esta puesto en el archivo de html*/
-.imagen1 {
-    display: block;/*sirve para poner el bloque asi ocupa todo el ancho*/
-    margin: 0% auto; /*pone un margen superior e inferior de cero y automatico*/
-    border: 2px solid black; /**/
-    background-color: aliceblue; /*color de fondo*/
-    background-position: center;
-}
-.contenedor-de-video {
-    text-align: center; /*alinea el contenido en el centro*/
-}
-.cambiosenla-mama { /* poner en el centro la imagen que no pude*/
+ }
 
-    display: block;
-    margin: 0% auto;
-    justify-content: center;/*centra horizontalmente*/
-    align-items: center;/* centra verticalmente*/
-    text-align: center;
-    background-color: aliceblue;
-    background-position: center;
-
-}
-.video {
-    display:inline-block; /* hace que se comporte como un bloque en linea*/
-}
-
-.imagen2 {
-    display: block;
-    margin: 0% auto ;
-    border: 1px solid black;
+/*Todas las imágenes con responsive*/
+img {
+    max-width: 100%;
     height: auto;
-    max-width: 50%;
+     
 }
-.Color3 {
-background-color: rgb(253, 205, 214);
-display: flex;
 
-}
-.imagen3 {
-    display: block;
-    margin: 0% auto;
-    border: 2px solid black;
-    background-color: rgb(253, 205, 214);
-}
-.Color4 {
-    background-color: rgb(253, 205, 214);
-}
-.metodos {
-    text-align: center;
-}
-dt u {
-    background-color: rgb(180, 132, 224);
-}
-.mitos{
-    font-size: 17px;
-    font-weight: bold;
-    background-color: rgb(221, 180, 221);
-}
-.dd-mitos{
-    background-color: rgb(233, 181, 217);
-}
-.tumor dd{
-    font-size: 20px;
-}
-.alto1{
-    display: flex;
-    justify-content: center;
+/* Formulario*/
+fieldset {
+   background-color: rgb(231, 212, 221);
 }
 
 p {
-    font-size: 20px;
-}
-em {
-    font-size: 20px; 
-}
+    font-size: 18px;
+ }
 
-fieldset {
-    background-color: rgb(231, 212, 221);
-    font-size: 20px;
-}
-
-header{
-    grid-area: "header";
-    background: rgb(238, 202, 238);
-}
-main{
-    grid-area: "main";
-    background: rgb(247, 221, 225);
-}
-footer {
+/* Footer*/
+ footer {
     grid-area: "footer"; /*Pie de página*/
     line-height: 1 ; /*Se usa para achicar el espacio entre las oraciones*/
     background-color: black;
     color: aliceblue;
-    font-size: 0.2em;
-}
-.nav-item:hover{  /* cuando pasas el mouse por encima de un elemento cambia de color en este caso en los que tenga id*/
-    background: violet;
-}  
+    font-size: 10px;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+ }
 
-@media only screen and (max-width: 600px) {
-    .rosa h1 {
-      font-size: 1.5em; /* Tamaño de fuente ajustado para pantallas más pequeñas */
+
+ /*media queries*/
+@media screen and   (max-width: 500px) { /*para pantallas iguales o menores a:*/
+    .mesde-lucha > a {
+    max-width: 100%;
+    height: auto;
+    font-size: 13px;
+    }
+
+    footer {
+        display: block;
+        padding-right: 1rem;
+        height: auto;
+    }
+    
+    .video {
+        max-width: 100%;
+        height: auto;
+         
+     }
+     
+     .Color3 {
+        width: 100%; /* Cambia a un solo elemento por fila */
+        margin-bottom: 10px;
+        display: block;
+    } 
+    .Luchar {
+       display: block;
+    }
+    .celular{
+        display:block;
+       
     }
 }
-.Luchar{
-    display: flex;
-    justify-content: center;
-    width: auto;
-   height: 200px;
-   background-position: center;
-}
-
-  
-  
+ @media  screen and (min-width: 768px)  { /* Para pantallas mas grandes*/ 
+        body { 
+        
+            font-size: 20px;
+        }
+       
+        
+    }
+ @media screen and (min-width: 1200px){ /* Para pantallas muy grandes*/
+        body {
+            font-size: 24px ;
+        }
+    }
+ 
